@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contenedorppal {
+  width: 50vw;
+  border: solid 1.5px black;
+  padding: 3px;
+  background-color: lightgray;
+}
+
+#ingresoDatos {
+  width: 100%;
+  display: flex;
+}
+
+#inputTarea {
+  width: 80%;
+}
+
+#boton {
+  width: 20%;
+  background-color: green;
+  color: aliceblue;
+}
+
+#contenedorTotalTareas {
+  grid-area: totalTareas;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+
+thead {
+  grid-area: cabecera;
+}
+
+#contenedorDatos {
+  display: grid;
+  grid-template-areas:
+    'totalTareas cabecera'
+    'totalRealizadas cabecera';
+}
+
+table {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+tbody {
+  justify-content: space-evenly;
+  align-items: center;
+}
